@@ -1,0 +1,60 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --text-color: #decdcd;
+  --main-text-color: #b79b66;
+  --main-bg-color: #1F1F22;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+body {
+  font-family: 'Montserrat', cursive;
+  overflow-x: hidden;
+  background-color: var(--main-bg-color);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.separator_line {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-color);
+}
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@import "components/Header/header";
+@import "routes/routes";
+@import "components/Stack/stack";
+@import "components/Portfolio/portfolio";
+@import "components/Footer/footer";
+@import "components/Modal/modal";

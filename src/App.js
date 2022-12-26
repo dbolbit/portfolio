@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useRef} from "react"
+import Home from "./routes/Home"
+import Header from "./components/Header/Header"
+import Container, {Separator} from "./components/Container"
+import Stack from "./routes/Stack"
+import Portfolio from "./routes/Portfolio"
+import Footer from "./components/Footer/Footer"
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header/>
+      <Container>
+        <Home/>
+      </Container>
+      <Separator/>
+      <Container
+        style={{background: 'radial-gradient(circle farthest-corner at -75% 100%, black,var(--main-bg-color))'}}>
+        <Stack/>
+      </Container>
+      <Separator/>
+      <Container
+        style={{background: 'radial-gradient(circle farthest-corner at -75% 100%,var(--main-bg-color), black)'}}>
+        <Portfolio/>
+      </Container>
+      <Separator/>
+      <Footer/>
+    </>
+  )
 }
 
-export default App;
+export default App
