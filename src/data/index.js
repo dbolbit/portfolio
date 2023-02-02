@@ -103,18 +103,16 @@ export const portfolioData = [
     name: 'Сайт-визитка web-разработчика',
     type: 'landing page',
     time: '~2 дня',
-    price: '~100$',
     stack: 'HTML5,CSS3,JavaScript,Figma,WordPress',
     img: portfolioImg,
-    url: ''
+    url: 'https://dbolbit.github.io/portfolio/'
   },
   {
     name: 'Интернет-магазин',
     type: 'SPA',
     time: '~ 1 месяц',
-    price: 'от 1000$',
     stack: 'HTML5,CSS3,React,React-Route,Redux Toolkit,Framer-Motion,Ant Design,Figma,Strapi',
     img: marketImg,
-    url: ''
+    url: 'https://dbolbit.github.io/market/#/'
   }
 ]

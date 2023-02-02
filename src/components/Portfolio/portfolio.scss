@@ -30,7 +30,10 @@
   position: relative;
   color: white;
   @media (max-width: 500px) {
-    width: 90%;
+    width: 400px;
+  }
+  @media (max-width: 420px) {
+    width: 300px;
   }
 
   &_wrapper_bg_img {
@@ -50,6 +53,7 @@
     transition: 0.2s linear;
 
     h3 {
+      text-align: center;
       width: fit-content;
       margin: 20px auto;
     }

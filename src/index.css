@@ -493,7 +493,12 @@ h1 {
 }
 @media (max-width: 500px) {
   .portfolio_card {
-    width: 90%;
+    width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  .portfolio_card {
+    width: 300px;
   }
 }
 .portfolio_card_wrapper_bg_img {
@@ -512,6 +517,7 @@ h1 {
   transition: 0.2s linear;
 }
 .portfolio_card_hovered_bg h3 {
+  text-align: center;
   width: fit-content;
   margin: 20px auto;
 }
